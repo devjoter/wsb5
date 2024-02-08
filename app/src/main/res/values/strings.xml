@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">wsb5</string>
+    <string name="title_activity_read_page">ReadPage</string>
+</resources>

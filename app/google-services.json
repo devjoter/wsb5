@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1049350812423",
+    "project_id": "bajubaju-8ffcf",
+    "storage_bucket": "bajubaju-8ffcf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1049350812423:android:6d4042dfc5334830ddcba2",
+        "android_client_info": {
+          "package_name": "com.flowoo.wsb5"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCG_rXN8NH2y0iMQy6jxVomF5o75pEvwmo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
