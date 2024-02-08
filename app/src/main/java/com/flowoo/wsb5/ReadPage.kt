@@ -1,6 +1,5 @@
 package com.flowoo.wsb5
 
-import FirebaseHandler
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
@@ -11,17 +10,23 @@ import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+
+import FirebaseHandler
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.Query
+
 import java.util.Locale
 
 class ReadPage : AppCompatActivity(), TextToSpeech.OnInitListener {
 
     private val firestore = FirebaseFirestore.getInstance()
+    private lateinit var firebaseHandler: FirebaseHandler
+
+
     private lateinit var textToSpeech: TextToSpeech
     private lateinit var displayTitleDataTextView: TextView
     private lateinit var displayContentDataTextView: TextView
-    private lateinit var firebaseHandler: FirebaseHandler
+
 
     private var contentSentences: MutableList<String> = mutableListOf()
     private var currentSentenceIndex: Int = 0
@@ -32,7 +37,7 @@ class ReadPage : AppCompatActivity(), TextToSpeech.OnInitListener {
 
         initializeViews()
         initializeTextToSpeech()
-        initializeFirebaseHandler()
+        firebaseHandler = FirebaseHandler(firestore)
 
         // Retrieve data from Firestore
         retrieveDataFairytale()
@@ -69,9 +74,9 @@ class ReadPage : AppCompatActivity(), TextToSpeech.OnInitListener {
         }
     }
 
-    private fun initializeFirebaseHandler() {
-        firebaseHandler = FirebaseHandler(firestore)
-    }
+//    private fun initializeFirebaseHandler() {
+//        firebaseHandler = FirebaseHandler(firestore)
+//    }
 
     private fun setupLanguage() {
         val polishLocale = Locale("pl", "PL")

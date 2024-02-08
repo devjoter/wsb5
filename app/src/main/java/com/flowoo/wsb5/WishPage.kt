@@ -1,4 +1,5 @@
 package com.flowoo.wsb5
+
 import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.os.Bundle
@@ -7,24 +8,28 @@ import android.speech.SpeechRecognizer
 import android.widget.ImageButton
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import java.util.*
+
+import FirebaseHandler
 import com.google.firebase.firestore.DocumentSnapshot
 import com.google.firebase.firestore.FirebaseFirestore
-import com.google.firebase.FirebaseApp
+
+import java.util.*
 
 class WishPage : AppCompatActivity() {
 
 
     private val SPEECH_REQUEST_CODE = 123
-    private lateinit var firestore: FirebaseFirestore
+
+
+    private val firestore = FirebaseFirestore.getInstance()
+    private lateinit var firebaseHandler: FirebaseHandler
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_wish_page)
 
         // Initialize Firebase
-        FirebaseApp.initializeApp(this)
-        firestore = FirebaseFirestore.getInstance()
+        firebaseHandler = FirebaseHandler(firestore)
 
         // home click button action
         val homeClick: ImageButton = findViewById(R.id.homeClick)
@@ -53,7 +58,7 @@ class WishPage : AppCompatActivity() {
     }
 
 
-     private fun handleRecognizedText(text: String) {
+    private fun handleRecognizedText(text: String) {
         // Split the recognized text into individual words
         val recognizedWords = text.split(" ")
 

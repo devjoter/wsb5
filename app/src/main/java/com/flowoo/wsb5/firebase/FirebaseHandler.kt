@@ -30,4 +30,8 @@ class FirebaseHandler(private val firestore: FirebaseFirestore) {
     fun buildQuery(collectionReference: CollectionReference, fieldName: String, value: String): Query {
         return collectionReference.whereEqualTo(fieldName, value)
     }
+    fun getFirestore(): FirebaseFirestore {
+        return firestore
+    }
+
 }
