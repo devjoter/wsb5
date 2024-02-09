@@ -1,6 +1,7 @@
 initial commit
 
-    Baju Baju is designed for kids and parents. It contain SpeechRecognizer and TextToSpeech 
+
+Baju Baju is designed for kids and parents. It contain SpeechRecognizer and TextToSpeech
 classes. User using voice prompts on WishPage can invoke query to Firebase Firestore database, 
 and get response with document containing his "wish". Recognised text is processed and matched with 
 firestore documents where word matching is on 25% accuracy level. This can be adjusted as more
