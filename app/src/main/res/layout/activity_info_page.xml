@@ -23,4 +23,22 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/annie_use_your_telescope"
+        android:text="Aplikacja Bye You By U to wyjątkowe narzędzie, które umożliwia tworzenie i odczytywanie bajek na podstawie prostych poleceń głosowych. Wyraź swoje życzenie, a sztuczna inteligencja (AI) stworzy dla Ciebie oryginalną opowieść, którą następnie przeczyta.
+                        \nObecnie, chociaż aplikacja jest w fazie testowej, bajki nie są jeszcze generowane dynamicznie. Zamiast tego, korzystamy z istniejącej bazy danych, która zawiera wcześniej utworzone historie. To oznacza, że użytkownicy mogą doświadczyć różnorodności treści dostępnych w aplikacji, jednak pełna funkcjonalność generowania bajek będzie dostępna wkrótce.
+                        \nPodczas tej fazy testowej, zachęcamy użytkowników do korzystania z funkcji odczytywania bajek, dostarczania opinii i eksperymentowania z możliwościami Bye You By U. Jesteśmy również podekscytowani wprowadzeniem w przyszłości płatnej opcji generowania bajek na żądanie, co dostarczy jeszcze większą przyjemność z korzystania z aplikacji"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.217" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

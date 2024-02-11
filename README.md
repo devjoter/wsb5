@@ -1,19 +1,14 @@
 initial commit
 
-    Baju Baju is designed for kids and parents. It contain SpeechRecognizer and TextToSpeech 
-classes. User using voice prompts on WishPage can invoke query to Firebase Firestore database, 
-and get response with document containing his "wish". Recognised text is processed and matched with 
-firestore documents where word matching is on 25% accuracy level. This can be adjusted as more
-generated "Fairy tales" will be present in database.
+Baju Baju Overview:
+Baju Baju is specifically designed for kids and parents, featuring the integration of SpeechRecognizer and TextToSpeech classes. The application enables users to utilize voice prompts on the WishPage, triggering queries to the Firebase Firestore database. Subsequently, users receive responses containing documents related to their expressed "wishes." The recognized text undergoes processing, and a match is sought within Firestore documents, with a matching accuracy level set at 25%. This accuracy threshold can be fine-tuned as the database accumulates more dynamically generated "Fairy tales."
 
-Intention to generate "Fairy tales" is to use API that will generate text and images 
-based on speech input, it will then save current response to firestore for future reuse even
-for other Users so they will be able to share stories or come back to "likes"
+Future Integration of API for Fairy Tale Generation:
+The application's future plan involves implementing an API that will dynamically generate text and images based on speech input. The generated content will be stored in Firestore for future use, allowing users to share their stories or revisit their "likes." However, this feature will be rolled out in stages, as it is not currently available for free. A paid version will be introduced, empowering users to cover the costs associated with API usage, ensuring sustainable and uninterrupted access to this premium functionality. Presently, all text is statically generated, and image generation is not yet implemented in the application.
 
-However this will be implemented in following stages as this feature is not free. There will be 
-paid version so the User can cover costs of API usage himself. Therefore at this moment all 
-text is generated statically, and image generation is not implemented yet.
+Development Roadmap:
 
-
+Current Stage (Free Version): The application provides static text generation and a preliminary version of the Firestore interaction.
+Upcoming Stages (Paid Version): Implementation of API-driven dynamic text and image generation, enabling enhanced storytelling capabilities and a broader range of interactive features.
 
 
