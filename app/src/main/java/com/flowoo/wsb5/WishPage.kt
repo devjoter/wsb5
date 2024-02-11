@@ -62,7 +62,7 @@ class WishPage : AppCompatActivity() {
         // Split the recognized text into individual words
         val recognizedWords = text.split(" ")
 
-        // Query Firestore to find documents with content containing at least 60% of recognized words
+        // Query Firestore to find documents with content containing at least 25% of recognized words
         val collectionReference = firestore.collection("tales")
 
         collectionReference.get()
